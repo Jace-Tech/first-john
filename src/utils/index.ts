@@ -1,0 +1,1 @@
+export const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=2349031799883&text=Hi%20First%20John%20Electrical%2C%20My%20name%20is%20________.%20I%27ll%20need%20some%20of%20your%20services."
