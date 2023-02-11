@@ -4,6 +4,7 @@ import Carousel, { Modal, ModalGateway } from 'react-images';
 import Gallery from 'react-photo-gallery';
 import { WHITE } from '../utils/colors'
 import { gallaries } from '../utils/data';
+import FixedModalGateway from './GateWay';
 
 interface ProjectsProps { }
 
@@ -50,7 +51,7 @@ const Projects: React.FC<ProjectsProps> = () => {
             onClick={openLightbox as any}
             margin={5}
           />
-          <ModalGateway>
+          <FixedModalGateway>
             {viewerIsOpen ? (
               <Modal onClose={closeLightbox}>
                 <Carousel
@@ -63,7 +64,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                 />
               </Modal>
             ) : null}
-          </ModalGateway>
+          </FixedModalGateway>
         </Box>
       </Container>
     </Box>
